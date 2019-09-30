@@ -1,0 +1,86 @@
+table {
+  border: 2px solid rgb(0, 191, 129);
+  border-radius: 3px;
+  background-color: #fff;
+  margin: auto;
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  th {
+    background-color: #42b983;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    position: relative;
+
+    // 搜索区域样式
+    .filter-area {
+      position: absolute;
+      left: 0;
+      top: 3px;
+
+      .filter {
+        width: 15px;
+      }
+    }
+
+    // 排序区域样式
+    .sort-area {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5px;
+      width: 10px;
+
+
+      .arrow {
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+      }
+
+      .arrow.asc {
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid #fff;
+        margin-bottom: 5px;
+      }
+
+      .arrow.desc {
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #fff;
+      }
+
+      .inActive {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  td {
+    background-color: #f9f9f9;
+  }
+
+  th,
+  td {
+    min-width: 120px;
+    padding: 10px 20px;
+  }
+
+  th.active {
+    color: #fff;
+  }
+
+  th.active .arrow {
+    opacity: 1;
+  }
+
+}

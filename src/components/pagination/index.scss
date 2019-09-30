@@ -1,0 +1,96 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+  .left-area {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #34495e;
+  }
+
+  // 中间：分页选项卡
+  .middle-area {
+    margin-right: 20px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+
+      li {
+        padding: 10px;
+        width: 10px;
+        height: 10px;
+        line-height: 10px;
+        text-align: center;
+        background: #eee;
+        border-radius: 5px;
+        margin-right: 5px;
+        font-size: 14px;
+      }
+
+      .active {
+        background: #42b983;
+        color: #fff;
+      }
+    }
+  }
+
+  // 选择每页显示条数
+  .sizes-area {
+    font-size: 14px;
+    color: #34495e;
+    position: relative;
+
+    .sizes {
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      min-width: 60px;
+    }
+
+    .select-list {
+      position: absolute;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: 100%;
+      text-align: left;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 0 10px;
+          height: 25px;
+          line-height: 25px;
+          border-bottom: 1px solid #ddd;
+          cursor: pointer;
+        }
+
+        li:last-child {
+          border: none;
+        }
+      }
+    }
+
+  }
+
+  .right-area {
+    font-size: 14px;
+    color: #34495e;
+    margin-left: 20px;
+
+    .current-page-input {
+      width: 30px;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+    }
+  }
+}

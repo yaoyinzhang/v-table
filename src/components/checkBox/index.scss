@@ -1,0 +1,22 @@
+// 筛选下拉列表
+.filter-pop-area {
+  position: absolute;
+  top: 20px;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+
+  ul {
+    color: #777;
+    list-style: none;
+    padding: 0 10px;
+    min-width: 80px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .btns {
+    padding: 0 7px 7px 0;
+    text-align: right;
+  }
+}

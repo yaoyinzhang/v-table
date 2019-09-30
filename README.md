@@ -1,2 +1,30 @@
-# v-table
-一个公共的table组件，供其他开发者使用，组件支持分页、排序和过滤功能。（使用vue框架进行开发，不使用任何第三方组件库）
+# jiaxunguangyuan
+
+> Interview questions
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
